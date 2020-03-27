@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import myRoutes from './router/router.js'
+import { BrowserRouter, Route } from 'react-router-dom'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+
+      <Route path="/" exact component={App} />
+      {myRoutes()}
+     
+    </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
