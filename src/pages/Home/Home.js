@@ -1,5 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router';
+import './Home.scss';
 
 function Home(props) {
   const css = {
@@ -7,17 +8,14 @@ function Home(props) {
           color: "cyan",
           fontSize: "70px"
         },
-        input: {
-          height: "50px",
-          width: "400px"
-        }
+        
        
   }
 
     return (
       <div className="home">
         <h1 style={css.h1}>Hello, {props.name}</h1>
-        <input style={css.input}/>
+        <input/>
       </div>
     )
   }
