@@ -13,9 +13,12 @@ function Home(props) {
     }
   }
 
+
+
     return (
       <div className="home">
         <h1 style={ 5 === 5 ? css.h1 : css.red }>Hello, {props.name}</h1>
+        <p>{5 === 6 ? "This Home" : "This is the matrix"}</p>
         <input/>
       </div>
     )
