@@ -4,17 +4,18 @@ import './Home.scss';
 
 function Home(props) {
   const css = {
-        h1: {
-          color: "cyan",
-          fontSize: "70px"
-        },
-        
-       
+    h1: {
+      color: "cyan",
+      fontSize: "70px"
+    },
+    red: {
+      color: "red"
+    }
   }
 
     return (
       <div className="home">
-        <h1 style={css.h1}>Hello, {props.name}</h1>
+        <h1 style={ 5 === 5 ? css.h1 : css.red }>Hello, {props.name}</h1>
         <input/>
       </div>
     )
