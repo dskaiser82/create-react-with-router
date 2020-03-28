@@ -5,12 +5,21 @@ function Home(props) {
   const css = {
         h1: {
           color: "cyan",
-          "font-size": "70px"
+          fontSize: "70px"
+        },
+        input: {
+          height: "50px",
+          width: "400px"
         }
        
   }
 
-    return <h1 style={css.h1}>Hello, {props.name}</h1>;
+    return (
+      <div className="home">
+        <h1 style={css.h1}>Hello, {props.name}</h1>
+        <input style={css.input}/>
+      </div>
+    )
   }
 
 

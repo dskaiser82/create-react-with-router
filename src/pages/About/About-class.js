@@ -9,7 +9,7 @@ class About extends React.Component {
 
 
       return (
-      <div className="about">  
+      <div className="about App">  
         <h2>I am a {this.state.color} Car!</h2>
         <button>Change Coloe</button>
       </div>  
