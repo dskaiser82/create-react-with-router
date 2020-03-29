@@ -42,11 +42,7 @@ class About extends React.Component {
         <button onClick={this.logIt}>With Arrow functions</button>
 
         <button onClick={this.handleClick }>Toogle Parent</button>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
+       
         {/* Only if its one time thing that fires */}
         <button onClick={renderFucntion}>Click Method from RENDER</button>
 

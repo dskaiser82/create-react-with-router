@@ -2,10 +2,7 @@ import React from 'react';
 import './lower_half.scss'
 
 class LowerHalf extends React.Component {
-    constructor(props){
-        super(props)
-    }
-
+  
     render() {
         return (
             <div className="lower-about">
