@@ -2,20 +2,20 @@ import React, { useState, useEffect } from 'react';
 
 function HomeBottom(){
     //(default state),  (method to change state)
-     const [pokeName, setPoke] = useState("Picachu")
+     const [bottomName, setBottomName] = useState("Im a default bottom name")
 
 
     // Similar to componentDidMount and componentDidUpdate:
     useEffect(() => {
         // Update the document title using the browser API
-        alert(100)
+        alert("Effect Ran")
     });
 
     return(
         <div className="home-bottom">
             <h2>Bottom Page</h2>
-            <p>{pokeName}</p>
-            <button onClick={() => setPoke("DennyMonster")}>
+            <p>{bottomName}</p>
+            <button onClick={() => setBottomName("New Name!!")}>
                 PokeMon Click
             </button>
         </div>
