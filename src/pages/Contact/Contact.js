@@ -8,11 +8,16 @@ class Contact extends React.Component {
         email: ""
       };
       // This binding is necessary to make `this` work in the callback
-    //   this.handl = this.handleClick.bind(this);
+      this.handleEmail = this.handleEmail.bind(this);
     } //////////////end constructor//////////////////////
 
     componentDidMount(){
         console.log(this)
+    }
+
+    handleEmail(event){
+        this.setState({email: event.target.value})
+        console.log(event.target)
     }
 
     render() {
@@ -24,7 +29,8 @@ class Contact extends React.Component {
       <div className="contact">  
         <h1>Contact Page</h1>
       <p>{this.props.location.pathname}</p>
-        <input type="email" name="email" />
+        <input onChange={this.handleEmail} type="email" name="email" />
+      <p>{this.state.email}</p>
       </div>  
       );
     }
