@@ -35,12 +35,13 @@ class About extends React.Component {
       //and this never changes,  ok to use method here
       const renderFucntion = () => {alert("I'm a funcion from render")}
 
-
       return (
-      <div className="about App">  
+      <div className={this.state.isToggleOn ? 'about app' : 'blue'}>  
         <h2>I am a {this.state.color} Car!</h2>
         {/* using experiemtn tal this to avoid bind */}
         <button onClick={this.logIt}>With Arrow functions</button>
+
+        <button onClick={this.handleClick }>Toogle Parent</button>
         <br/>
         <br/>
         <br/>
@@ -49,7 +50,7 @@ class About extends React.Component {
         {/* Only if its one time thing that fires */}
         <button onClick={renderFucntion}>Click Method from RENDER</button>
 
-        <LowerHalf/>
+        <LowerHalf handleClick={this.handleClick}/>
       </div>  
       );
     }

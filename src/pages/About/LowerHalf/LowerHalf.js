@@ -2,15 +2,15 @@ import React from 'react';
 import './lower_half.scss'
 
 class LowerHalf extends React.Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
     }
 
     render() {
         return (
             <div className="lower-about">
                 <h2>Lower Part of Page</h2>
-                <button>Cleek Me</button>
+                <button onClick={this.props.handleClick}>Props Click of parent method</button>
             </div>
         )
     }
