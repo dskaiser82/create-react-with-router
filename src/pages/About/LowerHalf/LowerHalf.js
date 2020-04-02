@@ -7,7 +7,6 @@ class LowerHalf extends React.Component {
         return (
             <div className="lower-about">
                 <h2>Lower Part of Page</h2>
-                <button onClick={this.props.handleClick}>Props Click of parent method</button>
             </div>
         )
     }

@@ -1,26 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+
+//Make a footer sub component
 
 function HomeBottom(){
-    //(default state),  (method to change state)
-     const [bottomName, setBottomName] = useState("Im a default bottom name")
-
-
-    // Similar to componentDidMount and componentDidUpdate:
-    useEffect(() => {
-        // Update the document title using the browser API
-        alert("Effect Ran")
-    });
-
+   //Use a React Hook for Use Effect
+    
     return(
         <div className="home-bottom">
             <h2>Bottom Page</h2>
-            <p>{bottomName}</p>
-            <button onClick={() => setBottomName("New Name!!")}>
-                PokeMon Click
-            </button>
         </div>
     )
-
 }
 
 export default HomeBottom

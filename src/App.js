@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Home name="I'm a Prop Bruh" />
-        {/* <img src={logo} className="App-logo" alt="logo" />  */}
+        {/* Use a Prop */}
+        <Home/>
       </header>
     </div>
   );
